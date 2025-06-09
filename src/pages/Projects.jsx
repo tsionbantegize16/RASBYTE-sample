@@ -23,26 +23,24 @@ const Projects = () => {
   ];
 
   return (
-    <div className="min-h-screen py-20">
+    <div className="min-h-screen py-20 bg-gradient-to-b from-primary-900 via-primary-800 to-primary-700 font-sans">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-primary-900 mb-12 text-center">Our Projects</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <h1 className="text-4xl font-bold text-primary-50 mb-12 text-center">Our Projects</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="p-6">
-                <div className="text-4xl mb-4">{project.image}</div>
-                <h3 className="text-xl font-semibold text-primary-800 mb-2">{project.title}</h3>
-                <p className="text-primary-700 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+            <div key={index} className="bg-primary-50 rounded-2xl shadow-lg overflow-hidden p-8 flex flex-col gap-4">
+              <div className="text-5xl mb-2">{project.image}</div>
+              <h3 className="text-2xl font-semibold text-primary-700 mb-1">{project.title}</h3>
+              <p className="text-primary-600 mb-3">{project.description}</p>
+              <div className="flex flex-wrap gap-2 mt-auto">
+                {project.technologies.map((tech, techIndex) => (
+                  <span
+                    key={techIndex}
+                    className="bg-accent-400 text-primary-900 px-3 py-1 rounded-full text-sm font-bold shadow"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
             </div>
           ))}

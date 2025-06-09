@@ -5,29 +5,15 @@ import "./About.css";
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-primary-50 via-primary-100 to-primary-400">
+    <div className="min-h-screen bg-gradient-to-b from-primary-50 via-primary-100 to-primary-400 font-sans">
       {/* Hero Section */}
-      <section className="relative py-32 px-6 md:px-24 text-center overflow-hidden">
-        <div className="absolute inset-0 cyber-pattern"></div>
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto relative"
-        >
-          <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-            className="mb-8"
-          >
-            <img src="/assets/images/rasbyte-logo.png" alt="Rasbyte Logo" className="h-20 mx-auto rounded-lg bg-primary-900 p-2" />
-          </motion.div>
-          <h1 className="text-5xl md:text-7xl font-bold text-primary-800 mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary-700 to-primary-400">
-            About Rasbyte
-          </h1>
-          <p className="text-xl md:text-2xl text-primary-700 leading-relaxed">
-            Securing your digital assets with industry-leading cybersecurity expertise
+      <section className="relative py-32 px-6 md:px-24 text-center overflow-hidden bg-gradient-to-r from-primary-700 to-primary-400 mb-16 shadow-lg">
+        <img src="/assets/images/about-hero.jpg" alt="About Rasbyte" className="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none rounded-b-3xl" />
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <img src="/assets/images/rasbyte-logo.png" alt="Rasbyte Logo" className="h-20 mx-auto rounded-lg bg-primary-900 p-2 mb-6" />
+          <h1 className="text-5xl md:text-7xl font-bold text-primary-50 mb-6 drop-shadow-lg">About Rasbyte</h1>
+          <p className="text-xl md:text-2xl text-primary-100 leading-relaxed mb-4">
+            Securing your digital assets with industry-leading cybersecurity expertise.
           </p>
           <motion.div
             initial={{ opacity: 0 }}
@@ -35,14 +21,14 @@ export default function About() {
             transition={{ delay: 0.5 }}
             className="mt-8 flex justify-center gap-4"
           >
-            <button className="bg-primary-600 text-primary-50 px-8 py-4 rounded-full hover:bg-primary-700 transition-all transform hover:scale-105 shadow-lg flex items-center gap-2">
+            <button className="bg-primary-400 text-primary-50 px-8 py-4 rounded-full hover:bg-primary-500 transition-all transform hover:scale-105 shadow-lg flex items-center gap-2">
               Get Started <ArrowRight className="w-5 h-5" />
             </button>
-            <button className="border-2 border-primary-600 text-primary-600 px-8 py-4 rounded-full hover:bg-primary-50 transition-all transform hover:scale-105 flex items-center gap-2">
+            <button className="border-2 border-primary-400 text-primary-400 px-8 py-4 rounded-full hover:bg-primary-50 transition-all transform hover:scale-105 flex items-center gap-2">
               Learn More
             </button>
           </motion.div>
-        </motion.div>
+        </div>
       </section>
 
       {/* Our Story Section */}

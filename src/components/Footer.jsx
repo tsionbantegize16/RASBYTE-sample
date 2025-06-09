@@ -24,9 +24,9 @@ const Footer = () => {
                 <li key={item}>
                   <Link
                     to={`/${item.toLowerCase().replace(" ", "-")}`}
-                    className="text-primary-200 hover:text-accent transition-colors flex items-center gap-2 group"
+                    className="text-primary-200 hover:text-primary-400 transition-colors flex items-center gap-2 group"
                   >
-                    <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-accent" />
+                    <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-primary-400" />
                     {item}
                   </Link>
                 </li>
@@ -48,9 +48,9 @@ const Footer = () => {
                 <li key={service}>
                   <Link
                     to="/services"
-                    className="text-primary-200 hover:text-accent transition-colors flex items-center gap-2 group"
+                    className="text-primary-200 hover:text-primary-400 transition-colors flex items-center gap-2 group"
                   >
-                    <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-accent" />
+                    <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-primary-400" />
                     {service}
                   </Link>
                 </li>
@@ -63,21 +63,21 @@ const Footer = () => {
             <h3 className="text-xl font-semibold text-primary-400 mb-6">Contact Info</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-accent mt-1" />
+                <MapPin className="w-5 h-5 text-primary-400 mt-1" />
                 <span className="text-primary-200">
                   16708 Richmond Hwy,<br />
                   Suite 111 Dumfries, VA 22026
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-accent" />
-                <a href="tel:+15713889886" className="text-primary-200 hover:text-accent transition-colors">
+                <Phone className="w-5 h-5 text-primary-400" />
+                <a href="tel:+15713889886" className="text-primary-200 hover:text-primary-400 transition-colors">
                   +1 (571) 388-9886
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-accent" />
-                <a href="mailto:contact@rasbyte.com" className="text-primary-200 hover:text-accent transition-colors">
+                <Mail className="w-5 h-5 text-primary-400" />
+                <a href="mailto:contact@rasbyte.com" className="text-primary-200 hover:text-primary-400 transition-colors">
                   contact@rasbyte.com
                 </a>
               </li>

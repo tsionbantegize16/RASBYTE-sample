@@ -14,9 +14,12 @@ module.exports = {
           400: '#1e9ed7', // vibrant, bright blue
           500: '#2a448c', // medium to dark blue
           600: '#23386e', // slightly darker than 500 (interpolated)
-          700: '#1b2950', // darker blue (interpolated)
-          800: '#131a2f', // very dark blue, almost black
+          700: '#1b2950', // darker blue (interpolated
+          800: '#131a2f',
           900: '#0d111f', // even darker
+        },
+        accent: {
+          400: '#FFD166', // yellow accent for highlights and CTAs
         },
       },
     },
