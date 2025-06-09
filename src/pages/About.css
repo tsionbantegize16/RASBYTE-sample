@@ -1,0 +1,11 @@
+.cyber-pattern {
+  background-image: url('../../public/assets/images/cyber-pattern.svg');
+  background-repeat: repeat;
+  opacity: 0.05;
+}
+
+.cyber-pattern-light {
+  background-image: url('../../public/assets/images/cyber-pattern.svg');
+  background-repeat: repeat;
+  opacity: 0.1;
+} 
