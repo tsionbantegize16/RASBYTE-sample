@@ -3,6 +3,24 @@ import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, ArrowRight, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
+  const quickLinks = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Clients", path: "/clients" },
+    { name: "Capabilities", path: "/capabilities" },
+    { name: "News", path: "/news" },
+    { name: "Career", path: "/career" }
+  ];
+
+  const services = [
+    "Penetration Testing",
+    "Security Posture Assessment",
+    "Cybersecurity Consulting",
+    "IT Asset Management (ITAM)",
+    "Cloud | AI | MLSecOps"
+  ];
+
   return (
     <footer className="bg-gradient-to-b from-primary-900 to-primary-950 text-primary-50">
       <div className="max-w-7xl mx-auto px-6 py-20">
@@ -36,14 +54,14 @@ const Footer = () => {
               <span className="absolute -bottom-2 left-0 w-12 h-1 bg-primary-400 rounded-full"></span>
             </h3>
             <ul className="space-y-4">
-              {["Home", "About Us", "Services", "Contact Us"].map((item) => (
-                <li key={item}>
+              {quickLinks.map((link) => (
+                <li key={link.name}>
                   <Link
-                    to={`/${item.toLowerCase().replace(" ", "-")}`}
+                    to={link.path}
                     className="text-primary-200 hover:text-primary-300 transition-colors flex items-center gap-3 group"
                   >
                     <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-all text-primary-400 transform group-hover:translate-x-1" />
-                    {item}
+                    {link.name}
                   </Link>
                 </li>
               ))}
@@ -57,13 +75,7 @@ const Footer = () => {
               <span className="absolute -bottom-2 left-0 w-12 h-1 bg-primary-400 rounded-full"></span>
             </h3>
             <ul className="space-y-4">
-              {[
-                "Penetration Testing",
-                "Security Posture Assessment",
-                "Cybersecurity Consulting",
-                "IT Asset Management (ITAM)",
-                "Cloud | AI | MLSecOps"
-              ].map((service) => (
+              {services.map((service) => (
                 <li key={service}>
                   <Link
                     to="/services"
