@@ -5,12 +5,12 @@ import "./About.css";
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-primary-50 via-primary-100 to-primary-400 font-sans">
+    <div className="min-h-screen bg-gradient-to-b from-primary-50 via-primary-100 to-primary-300 font-sans">
       {/* Hero Section */}
-      <section className="relative py-32 px-6 md:px-24 text-center overflow-hidden bg-gradient-to-r from-primary-700 to-primary-400 mb-16 shadow-lg">
+      <section className="relative py-32 px-6 md:px-24 text-center overflow-hidden bg-gradient-to-r from-primary-500 to-primary-300 mb-16 shadow-lg">
         <img src="/assets/images/about-hero.jpg" alt="About Rasbyte" className="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none rounded-b-3xl" />
         <div className="relative z-10 max-w-4xl mx-auto">
-          <img src="/assets/images/rasbyte-logo.png" alt="Rasbyte Logo" className="h-20 mx-auto rounded-lg bg-primary-900 p-2 mb-6" />
+          <img src="/assets/images/rasbyte-logo.png" alt="Rasbyte Logo" className="h-20 mx-auto rounded-lg bg-primary-500 p-2 mb-6" />
           <h1 className="text-5xl md:text-7xl font-bold text-primary-50 mb-6 drop-shadow-lg">About Rasbyte</h1>
           <p className="text-xl md:text-2xl text-primary-100 leading-relaxed mb-4">
             Securing your digital assets with industry-leading cybersecurity expertise.
@@ -44,20 +44,20 @@ export default function About() {
                 viewport={{ once: true }}
               >
                 <span className="text-primary-400 font-semibold tracking-wider mb-4 block">OUR STORY</span>
-                <h2 className="text-4xl font-bold text-primary-800 mb-6">Proactive Cybersecurity for a Safer Digital World</h2>
-                <p className="text-primary-700 text-lg leading-relaxed mb-8">
+                <h2 className="text-4xl font-bold text-primary-500 mb-6">Proactive Cybersecurity for a Safer Digital World</h2>
+                <p className="text-primary-400 text-lg leading-relaxed mb-8">
                   In today's rapidly evolving digital landscape, cyber adversaries are becoming increasingly sophisticated. 
                   At Rasbyte, we take a proactive approach to monitor, detect, and mitigate cyber risks. Through our 
                   alliances with top-notch cybersecurity firms, we address cyber risks and test digital footprints.
                 </p>
                 <div className="flex gap-6">
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-6 h-6 text-primary-600" />
-                    <span className="text-primary-800">24/7 Monitoring</span>
+                    <CheckCircle2 className="w-6 h-6 text-primary-400" />
+                    <span className="text-primary-500">24/7 Monitoring</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-6 h-6 text-primary-600" />
-                    <span className="text-primary-800">Expert Team</span>
+                    <CheckCircle2 className="w-6 h-6 text-primary-400" />
+                    <span className="text-primary-500">Expert Team</span>
                   </div>
                 </div>
               </motion.div>
@@ -70,7 +70,7 @@ export default function About() {
                 viewport={{ once: true }}
                 className="relative"
               >
-                <div className="absolute inset-0 bg-primary-400/10 rounded-3xl transform rotate-6"></div>
+                <div className="absolute inset-0 bg-primary-300/10 rounded-3xl transform rotate-6"></div>
                 <img
                   src="/assets/images/cyber-security-team.jpg"
                   alt="Cybersecurity Team"
@@ -94,23 +94,23 @@ export default function About() {
                 viewport={{ once: true }}
               >
                 <span className="text-primary-400 font-semibold tracking-wider mb-4 block">WHERE WE STARTED</span>
-                <h2 className="text-4xl font-bold text-primary-800 mb-6">Our Foundation</h2>
-                <p className="text-primary-700 text-lg leading-relaxed mb-8">
+                <h2 className="text-4xl font-bold text-primary-500 mb-6">Our Foundation</h2>
+                <p className="text-primary-400 text-lg leading-relaxed mb-8">
                   Headquartered in Woodbridge, VA, we help organizations strengthen their cybersecurity posture 
                   through consultation, technical support, IT asset management, health informatics, and tailored 
                   cybersecurity best practices.
                 </p>
                 <div className="grid grid-cols-2 gap-6 mb-8">
                   <div className="bg-primary-50 p-6 rounded-xl shadow-lg">
-                    <h4 className="font-semibold text-primary-800 mb-2">Founded</h4>
-                    <p className="text-primary-700">2020</p>
+                    <h4 className="font-semibold text-primary-500 mb-2">Founded</h4>
+                    <p className="text-primary-400">2020</p>
                   </div>
                   <div className="bg-primary-50 p-6 rounded-xl shadow-lg">
-                    <h4 className="font-semibold text-primary-800 mb-2">Location</h4>
-                    <p className="text-primary-700">Woodbridge, VA</p>
+                    <h4 className="font-semibold text-primary-500 mb-2">Location</h4>
+                    <p className="text-primary-400">Woodbridge, VA</p>
                   </div>
                 </div>
-                <button className="bg-primary-600 text-primary-50 px-8 py-4 rounded-full hover:bg-primary-700 transition-all transform hover:scale-105 shadow-lg flex items-center gap-2">
+                <button className="bg-primary-400 text-primary-50 px-8 py-4 rounded-full hover:bg-primary-500 transition-all transform hover:scale-105 shadow-lg flex items-center gap-2">
                   Visit our headquarters <ArrowRight className="w-5 h-5" />
                 </button>
               </motion.div>
@@ -123,7 +123,7 @@ export default function About() {
                 viewport={{ once: true }}
                 className="relative"
               >
-                <div className="absolute inset-0 bg-primary-400/10 rounded-3xl transform -rotate-6"></div>
+                <div className="absolute inset-0 bg-primary-300/10 rounded-3xl transform -rotate-6"></div>
                 <img
                   src="/assets/images/office-building.jpg"
                   alt="Rasbyte Headquarters"
@@ -147,8 +147,8 @@ export default function About() {
             className="text-center mb-16"
           >
             <span className="text-primary-400 font-semibold tracking-wider mb-4 block">OUR EFFORTS</span>
-            <h2 className="text-4xl font-bold text-primary-800 mb-6">Comprehensive Cybersecurity Strategy</h2>
-            <p className="text-primary-700 text-lg max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-primary-500 mb-6">Comprehensive Cybersecurity Strategy</h2>
+            <p className="text-primary-400 text-lg max-w-3xl mx-auto">
               We implement a robust strategy to protect your critical data through three key pillars:
             </p>
           </motion.div>
@@ -164,8 +164,8 @@ export default function About() {
               <div className="mb-6 bg-primary-100 p-4 rounded-xl inline-block">
                 <Shield className="w-12 h-12 text-primary-400" />
               </div>
-              <h4 className="text-2xl font-semibold mb-4">Data Protection</h4>
-              <p className="text-primary-700 leading-relaxed">Protecting PII, PHI, and intellectual property with state-of-the-art encryption and security protocols.</p>
+              <h4 className="text-2xl font-semibold mb-4 text-primary-500">Data Protection</h4>
+              <p className="text-primary-400 leading-relaxed">Protecting PII, PHI, and intellectual property with state-of-the-art encryption and security protocols.</p>
             </motion.div>
 
             <motion.div
@@ -176,10 +176,10 @@ export default function About() {
               className="bg-primary-50 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-2"
             >
               <div className="mb-6 bg-primary-200 p-4 rounded-xl inline-block">
-                <Server className="w-12 h-12 text-primary-600" />
+                <Server className="w-12 h-12 text-primary-400" />
               </div>
-              <h4 className="text-2xl font-semibold mb-4">Network Security</h4>
-              <p className="text-primary-700 leading-relaxed">Preventing cybercriminals from infiltrating corporate networks with advanced threat detection.</p>
+              <h4 className="text-2xl font-semibold mb-4 text-primary-500">Network Security</h4>
+              <p className="text-primary-400 leading-relaxed">Preventing cybercriminals from infiltrating corporate networks with advanced threat detection.</p>
             </motion.div>
 
             <motion.div
@@ -190,15 +190,15 @@ export default function About() {
               className="bg-primary-50 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-2"
             >
               <div className="mb-6 bg-primary-300 p-4 rounded-xl inline-block">
-                <Code className="w-12 h-12 text-primary-700" />
+                <Code className="w-12 h-12 text-primary-400" />
               </div>
-              <h4 className="text-2xl font-semibold mb-4">Best Practices</h4>
-              <p className="text-primary-700 leading-relaxed">Implementing industry best practices and tailored frameworks for optimal security.</p>
+              <h4 className="text-2xl font-semibold mb-4 text-primary-500">Best Practices</h4>
+              <p className="text-primary-400 leading-relaxed">Implementing industry best practices and tailored frameworks for optimal security.</p>
             </motion.div>
           </div>
 
           <div className="text-center mt-16">
-            <button className="bg-primary-600 text-primary-50 px-8 py-4 rounded-full hover:bg-primary-700 transition-all transform hover:scale-105 shadow-lg flex items-center gap-2 mx-auto">
+            <button className="bg-primary-400 text-primary-50 px-8 py-4 rounded-full hover:bg-primary-500 transition-all transform hover:scale-105 shadow-lg flex items-center gap-2 mx-auto">
               Explore our services <ArrowRight className="w-5 h-5" />
             </button>
           </div>
@@ -217,8 +217,8 @@ export default function About() {
                 viewport={{ once: true }}
               >
                 <span className="text-primary-400 font-semibold tracking-wider mb-4 block">OUR EXPERTS</span>
-                <h2 className="text-4xl font-bold text-primary-800 mb-6">Subject Matter Experts</h2>
-                <p className="text-primary-700 text-lg leading-relaxed mb-8">
+                <h2 className="text-4xl font-bold text-primary-500 mb-6">Subject Matter Experts</h2>
+                <p className="text-primary-400 text-lg leading-relaxed mb-8">
                   Our team comprises SMEs with expertise in penetration testing, risk management, and consultancy services. 
                   We believe in proactive cyber strategy and leverage defense-in-depth and industry best practices.
                 </p>
@@ -239,13 +239,13 @@ export default function About() {
                       viewport={{ once: true }}
                       className="bg-primary-50 p-4 rounded-xl shadow-lg flex items-center gap-3"
                     >
-                      <CheckCircle2 className="w-6 h-6 text-primary-600 flex-shrink-0" />
-                      <span className="text-primary-800 font-medium">{expertise}</span>
+                      <CheckCircle2 className="w-6 h-6 text-primary-400 flex-shrink-0" />
+                      <span className="text-primary-500 font-medium">{expertise}</span>
                     </motion.div>
                   ))}
                 </div>
 
-                <button className="bg-primary-600 text-primary-50 px-8 py-4 rounded-full hover:bg-primary-700 transition-all transform hover:scale-105 shadow-lg flex items-center gap-2">
+                <button className="bg-primary-400 text-primary-50 px-8 py-4 rounded-full hover:bg-primary-500 transition-all transform hover:scale-105 shadow-lg flex items-center gap-2">
                   Meet our team <ArrowRight className="w-5 h-5" />
                 </button>
               </motion.div>

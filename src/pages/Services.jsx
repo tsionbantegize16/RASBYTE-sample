@@ -60,14 +60,14 @@ const insights = [
 
 const Services = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-primary-900 via-primary-800 to-primary-700 pb-20 font-sans">
+    <div className="min-h-screen bg-gradient-to-b from-primary-500 via-primary-400 to-primary-300 pb-20 font-sans">
       {/* Hero Section */}
-      <section className="py-20 px-4 text-center bg-gradient-to-r from-primary-700 to-primary-400 mb-16 shadow-lg">
+      <section className="py-20 px-4 text-center bg-gradient-to-r from-primary-500 to-primary-300 mb-16 shadow-lg">
         <h1 className="text-5xl md:text-6xl font-extrabold text-accent-400 mb-4 drop-shadow-lg">Services Offered by Rasbyte</h1>
-        <p className="text-xl md:text-2xl text-primary-100 max-w-2xl mx-auto mb-6">
+        <p className="text-xl md:text-2xl text-primary-50 max-w-2xl mx-auto mb-6">
           Comprehensive cybersecurity solutions for modern organizations—proactive, strategic, and tailored to your needs.
         </p>
-        <a href="/contact" className="inline-block bg-accent-400 text-primary-900 font-bold px-10 py-4 rounded-full shadow-lg hover:bg-primary-400 hover:text-accent-400 transition-colors text-lg mt-4">
+        <a href="/contact" className="inline-block bg-accent-400 text-primary-500 font-bold px-10 py-4 rounded-full shadow-lg hover:bg-primary-300 hover:text-accent-400 transition-colors text-lg mt-4">
           Request a Proposal
         </a>
       </section>
@@ -86,15 +86,15 @@ const Services = () => {
                   ? service.icon()
                   : React.createElement(service.icon, { className: 'w-14 h-14 text-primary-400 group-hover:text-accent-400 transition-colors' })}
               </div>
-              <h3 className="text-2xl font-bold text-primary-700 mb-2 text-center group-hover:text-accent-400 transition-colors">{service.title}</h3>
-              <p className="text-primary-600 text-base leading-relaxed text-center">{service.description}</p>
+              <h3 className="text-2xl font-bold text-primary-500 mb-2 text-center group-hover:text-accent-400 transition-colors">{service.title}</h3>
+              <p className="text-primary-400 text-base leading-relaxed text-center">{service.description}</p>
             </div>
           ))}
         </div>
       </section>
       {/* Insights Section */}
       <section className="max-w-4xl mx-auto px-4">
-        <div className="bg-gradient-to-r from-primary-100 to-primary-50 rounded-3xl shadow-xl p-10 border border-primary-200">
+        <div className="bg-gradient-to-r from-primary-50 to-primary-100 rounded-3xl shadow-xl p-10 border border-primary-200">
           <h2 className="text-3xl font-bold text-accent-400 mb-6 flex items-center gap-3">
             <ShieldCheck className="w-8 h-8 text-accent-400" /> Why Choose Rasbyte?
           </h2>
@@ -103,13 +103,13 @@ const Services = () => {
               <li key={idx} className="flex gap-3 items-start">
                 <span className="mt-1 w-3 h-3 rounded-full bg-accent-400 inline-block"></span>
                 <div>
-                  <span className="font-semibold text-primary-600">{insight.title}:</span>{' '}
-                  <span className="text-primary-700">{insight.text}</span>
+                  <span className="font-semibold text-primary-500">{insight.title}:</span>{' '}
+                  <span className="text-primary-400">{insight.text}</span>
                 </div>
               </li>
             ))}
           </ul>
-          <div className="text-primary-800 text-lg">
+          <div className="text-primary-500 text-lg">
             <p className="mb-2 font-semibold">Recommended Next Steps</p>
             <ol className="list-decimal list-inside space-y-1">
               <li>Decide your priority area: Start with testing your current defenses (penetration testing), or build your security foundation (policies and processes).</li>

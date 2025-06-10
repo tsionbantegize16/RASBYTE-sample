@@ -7,19 +7,19 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          50: '#e5f3fa', // very light, almost white blue
-          100: '#e5f3fa',
-          200: '#b3d9f2', // lighter blue (interpolated)
-          300: '#7fc3ea', // light blue (interpolated)
-          400: '#1e9ed7', // vibrant, bright blue
-          500: '#2a448c', // medium to dark blue
-          600: '#23386e', // slightly darker than 500 (interpolated)
-          700: '#1b2950', // darker blue (interpolated
-          800: '#131a2f',
-          900: '#0d111f', // even darker
+          50: '#D4F2FF',  // very light blue
+          100: '#A3E4FF', // light blue
+          200: '#7DDCFF', // sky blue
+          300: '#05B2FA', // vivid blue
+          400: '#035B78', // deep blue
+          500: '#035B78',
+          600: '#035B78',
+          700: '#035B78',
+          800: '#035B78',
+          900: '#035B78',
         },
         accent: {
-          400: '#FFD166', // yellow accent for highlights and CTAs
+          400: '#05B2FA', // accent color for highlights and CTAs
         },
       },
     },
